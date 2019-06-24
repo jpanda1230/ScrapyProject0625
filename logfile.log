@@ -1,0 +1,868 @@
+2019-06-22 05:31:46 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: community)
+2019-06-22 05:31:46 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.17763-SP0
+2019-06-22 05:31:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'community', 'LOG_FILE': 'logfile.log', 'NEWSPIDER_MODULE': 'community.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['community.spiders']}
+2019-06-22 05:31:46 [scrapy.extensions.telnet] INFO: Telnet Password: d804196ba5b22483
+2019-06-22 05:31:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-22 05:31:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-22 05:31:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-22 05:31:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['community.pipelines.CommunityPipeline']
+2019-06-22 05:31:46 [scrapy.core.engine] INFO: Spider opened
+2019-06-22 05:31:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-22 05:31:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-06-22 05:31:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/robots.txt> from <GET http://rubinmuseum.org/robots.txt>
+2019-06-22 05:31:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/robots.txt> (referer: None)
+2019-06-22 05:31:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/events?category=14> from <GET http://rubinmuseum.org/events?category=14>
+2019-06-22 05:31:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events?category=14> (referer: None)
+2019-06-22 05:31:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/compassionate-action-from-a-place-of-strength-06-26-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:31:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/masterworks> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:31:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-power-of-intention> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:31:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/gateway-to-himalayan-art> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:31:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/charged-with-buddhas-blessings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:31:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/faith-and-empire> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:31:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/shrine-room-projects-wishes-and-offerings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-tibetan-buddhist-shrine-room> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/tibetan-mantra-healing-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-wheel-of-intentions> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-lounge-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/mindful-connections-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-spiritual-work-in-a-material-world-the-business-of-yoga-09-28-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/the-power-of-a-single-cell-the-deep-history-of-ourselves-09-11-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-friday-night-tour-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-the-case-against-reality-08-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-seeing-the-sacred-in-samsara-08-14-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-mental-health-in-asian-american-communities-07-27-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-creating-a-culture-of-consent-10-12-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-black-american-buddhists-activism-and-community-07-24-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-education-and-future-of-himalayan-immigrant-communities-07-13-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/jerry-colonna-dan-harris-07-10-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:32:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-06-22 05:32:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 12808,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 327652,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 24,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 6, 21, 21, 32, 15, 802902),
+ 'log_count/DEBUG': 26,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 1,
+ 'response_received_count': 24,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 24,
+ 'scheduler/dequeued/memory': 24,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'start_time': datetime.datetime(2019, 6, 21, 21, 31, 46, 523113)}
+2019-06-22 05:32:15 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-06-22 05:33:33 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: community)
+2019-06-22 05:33:33 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.17763-SP0
+2019-06-22 05:33:33 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'community', 'LOG_FILE': 'logfile.log', 'NEWSPIDER_MODULE': 'community.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['community.spiders']}
+2019-06-22 05:33:33 [scrapy.extensions.telnet] INFO: Telnet Password: 3c8777db6774aa78
+2019-06-22 05:33:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-22 05:33:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-22 05:33:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-22 05:33:33 [scrapy.middleware] INFO: Enabled item pipelines:
+['community.pipelines.CommunityPipeline']
+2019-06-22 05:33:33 [scrapy.core.engine] INFO: Spider opened
+2019-06-22 05:33:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-22 05:33:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-06-22 05:33:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/robots.txt> from <GET http://rubinmuseum.org/robots.txt>
+2019-06-22 05:33:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/robots.txt> (referer: None)
+2019-06-22 05:33:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/events?category=14> from <GET http://rubinmuseum.org/events?category=14>
+2019-06-22 05:33:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events?category=14> (referer: None)
+2019-06-22 05:33:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/compassionate-action-from-a-place-of-strength-06-26-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/compassionate-action-from-a-place-of-strength-06-26-2019>
+{'title': ['<h1 class="header">Beyond Burnout: Sustaining Ourselves and Each '
+           'Other in Social Movements</h1>']}
+2019-06-22 05:33:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-power-of-intention> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/the-power-of-intention>
+{'title': ['<h1 class="header">The Power of Intention</h1>']}
+2019-06-22 05:33:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/masterworks> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/masterworks>
+{'title': ['<h1 class="header">Masterworks of Himalayan Art</h1>']}
+2019-06-22 05:33:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/charged-with-buddhas-blessings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/charged-with-buddhas-blessings>
+{'title': ['<h1 class="header">Charged with Buddha’s Blessings</h1>']}
+2019-06-22 05:33:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-tibetan-buddhist-shrine-room> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/the-tibetan-buddhist-shrine-room>
+{'title': ['<h1 class="header">The Tibetan Buddhist Shrine Room</h1>']}
+2019-06-22 05:33:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/tibetan-mantra-healing-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/tibetan-mantra-healing-06-21-2019>
+{'title': ['<h1 class="header">Tibetan Mantra Healing</h1>']}
+2019-06-22 05:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/shrine-room-projects-wishes-and-offerings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/shrine-room-projects-wishes-and-offerings>
+{'title': ['<h1 class="header">Shrine Room Projects: Wishes and '
+           'Offerings</h1>']}
+2019-06-22 05:33:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/gateway-to-himalayan-art> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/gateway-to-himalayan-art>
+{'title': ['<h1 class="header">Gateway to Himalayan Art</h1>']}
+2019-06-22 05:33:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-wheel-of-intentions> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/the-wheel-of-intentions>
+{'title': ['<h1 class="header">The Wheel of Intentions</h1>']}
+2019-06-22 05:33:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-friday-night-tour-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/k2-friday-night-tour-06-21-2019>
+{'title': ['<h1 class="header">K2 Friday Night Tour</h1>']}
+2019-06-22 05:33:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-lounge-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/k2-lounge-06-21-2019>
+{'title': ['<h1 class="header">K2 Lounge</h1>']}
+2019-06-22 05:33:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/faith-and-empire> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/exhibitions/faith-and-empire>
+{'title': ['<h1 class="header">Faith and Empire</h1>']}
+2019-06-22 05:33:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-creating-a-culture-of-consent-10-12-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/power-creating-a-culture-of-consent-10-12-2019>
+{'title': ['<h1 class="header">Creating a Culture of Consent</h1>']}
+2019-06-22 05:33:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/the-power-of-a-single-cell-the-deep-history-of-ourselves-09-11-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/the-power-of-a-single-cell-the-deep-history-of-ourselves-09-11-2019>
+{'title': ['<h1 class="header">The power of a single cell: The deep history of '
+           'ourselves</h1>']}
+2019-06-22 05:33:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-the-case-against-reality-08-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/power-brainwave-the-case-against-reality-08-21-2019>
+{'title': ['<h1 class="header">The Case Against Reality</h1>']}
+2019-06-22 05:33:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-mental-health-in-asian-american-communities-07-27-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/power-mental-health-in-asian-american-communities-07-27-2019>
+{'title': ['<h1 class="header">Mental Health in Asian American '
+           'Communities</h1>']}
+2019-06-22 05:33:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/mindful-connections-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/mindful-connections-06-21-2019>
+{'title': ['<h1 class="header">Mindful Connections</h1>']}
+2019-06-22 05:33:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-black-american-buddhists-activism-and-community-07-24-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/power-brainwave-black-american-buddhists-activism-and-community-07-24-2019>
+{'title': ['<h1 class="header">Black American Buddhists on Activism and '
+           'Community</h1>']}
+2019-06-22 05:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-spiritual-work-in-a-material-world-the-business-of-yoga-09-28-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/power-spiritual-work-in-a-material-world-the-business-of-yoga-09-28-2019>
+{'title': ['<h1 class="header">Spiritual Work in a Material World: The '
+           'Business of Yoga</h1>']}
+2019-06-22 05:33:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-education-and-future-of-himalayan-immigrant-communities-07-13-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/power-education-and-future-of-himalayan-immigrant-communities-07-13-2019>
+{'title': ['<h1 class="header">Education and the Future of Himalayan Immigrant '
+           'Communities</h1>']}
+2019-06-22 05:33:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/jerry-colonna-dan-harris-07-10-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/jerry-colonna-dan-harris-07-10-2019>
+{'title': ['<h1 class="header">Jerry Colonna + Dan Harris</h1>']}
+2019-06-22 05:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-seeing-the-sacred-in-samsara-08-14-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://rubinmuseum.org/events/event/power-seeing-the-sacred-in-samsara-08-14-2019>
+{'title': ['<h1 class="header">Seeing the Sacred in Samsara</h1>']}
+2019-06-22 05:33:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-06-22 05:33:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 12827,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 327686,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 24,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 6, 21, 21, 33, 58, 781752),
+ 'item_scraped_count': 22,
+ 'log_count/DEBUG': 48,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 1,
+ 'response_received_count': 24,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 24,
+ 'scheduler/dequeued/memory': 24,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'start_time': datetime.datetime(2019, 6, 21, 21, 33, 33, 783149)}
+2019-06-22 05:33:58 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-06-22 05:39:19 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: community)
+2019-06-22 05:39:19 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.17763-SP0
+2019-06-22 05:39:19 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'community', 'LOG_FILE': 'logfile.log', 'NEWSPIDER_MODULE': 'community.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['community.spiders']}
+2019-06-22 05:39:19 [scrapy.extensions.telnet] INFO: Telnet Password: bc0d36a99d777422
+2019-06-22 05:39:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-22 05:39:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-22 05:39:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-22 05:39:19 [scrapy.middleware] INFO: Enabled item pipelines:
+['community.pipelines.CommunityPipeline']
+2019-06-22 05:39:19 [scrapy.core.engine] INFO: Spider opened
+2019-06-22 05:39:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-22 05:39:19 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-06-22 05:39:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/robots.txt> from <GET http://rubinmuseum.org/robots.txt>
+2019-06-22 05:39:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/robots.txt> (referer: None)
+2019-06-22 05:39:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/events?category=14> from <GET http://rubinmuseum.org/events?category=14>
+2019-06-22 05:39:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events?category=14> (referer: None)
+2019-06-22 05:39:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-spiritual-work-in-a-material-world-the-business-of-yoga-09-28-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-spiritual-work-in-a-material-world-the-business-of-yoga-09-28-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-black-american-buddhists-activism-and-community-07-24-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-brainwave-black-american-buddhists-activism-and-community-07-24-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/jerry-colonna-dan-harris-07-10-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/jerry-colonna-dan-harris-07-10-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-the-case-against-reality-08-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-brainwave-the-case-against-reality-08-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-seeing-the-sacred-in-samsara-08-14-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-seeing-the-sacred-in-samsara-08-14-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-education-and-future-of-himalayan-immigrant-communities-07-13-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-education-and-future-of-himalayan-immigrant-communities-07-13-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/compassionate-action-from-a-place-of-strength-06-26-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/compassionate-action-from-a-place-of-strength-06-26-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/the-power-of-a-single-cell-the-deep-history-of-ourselves-09-11-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/the-power-of-a-single-cell-the-deep-history-of-ourselves-09-11-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/gateway-to-himalayan-art> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/gateway-to-himalayan-art> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/charged-with-buddhas-blessings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/charged-with-buddhas-blessings> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/masterworks> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/masterworks> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-mental-health-in-asian-american-communities-07-27-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-mental-health-in-asian-american-communities-07-27-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-wheel-of-intentions> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/the-wheel-of-intentions> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-tibetan-buddhist-shrine-room> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/the-tibetan-buddhist-shrine-room> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-power-of-intention> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/the-power-of-intention> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-friday-night-tour-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/k2-friday-night-tour-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/shrine-room-projects-wishes-and-offerings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/shrine-room-projects-wishes-and-offerings> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-lounge-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/k2-lounge-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-creating-a-culture-of-consent-10-12-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-creating-a-culture-of-consent-10-12-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/faith-and-empire> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/faith-and-empire> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/tibetan-mantra-healing-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/tibetan-mantra-healing-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/mindful-connections-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:39:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/mindful-connections-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:39:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-06-22 05:39:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 12930,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 327860,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 24,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 6, 21, 21, 39, 49, 793468),
+ 'log_count/DEBUG': 26,
+ 'log_count/ERROR': 22,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 1,
+ 'response_received_count': 24,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 24,
+ 'scheduler/dequeued/memory': 24,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'spider_exceptions/TypeError': 22,
+ 'start_time': datetime.datetime(2019, 6, 21, 21, 39, 19, 768990)}
+2019-06-22 05:39:49 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-06-22 05:41:50 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: community)
+2019-06-22 05:41:50 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.17763-SP0
+2019-06-22 05:41:50 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'community', 'LOG_FILE': 'logfile.log', 'NEWSPIDER_MODULE': 'community.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['community.spiders']}
+2019-06-22 05:41:50 [scrapy.extensions.telnet] INFO: Telnet Password: 2923bedbaad73125
+2019-06-22 05:41:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-22 05:41:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-22 05:41:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-22 05:41:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['community.pipelines.CommunityPipeline']
+2019-06-22 05:41:51 [scrapy.core.engine] INFO: Spider opened
+2019-06-22 05:41:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-22 05:41:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-06-22 05:41:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/robots.txt> from <GET http://rubinmuseum.org/robots.txt>
+2019-06-22 05:41:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/robots.txt> (referer: None)
+2019-06-22 05:41:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://rubinmuseum.org/events?category=14> from <GET http://rubinmuseum.org/events?category=14>
+2019-06-22 05:41:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events?category=14> (referer: None)
+2019-06-22 05:41:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/compassionate-action-from-a-place-of-strength-06-26-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:41:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/compassionate-action-from-a-place-of-strength-06-26-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:41:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/gateway-to-himalayan-art> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:41:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/gateway-to-himalayan-art> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-power-of-intention> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/the-power-of-intention> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/masterworks> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/masterworks> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/shrine-room-projects-wishes-and-offerings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/shrine-room-projects-wishes-and-offerings> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-wheel-of-intentions> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/the-wheel-of-intentions> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/faith-and-empire> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/faith-and-empire> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/charged-with-buddhas-blessings> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/charged-with-buddhas-blessings> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-lounge-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/k2-lounge-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/mindful-connections-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/mindful-connections-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/exhibitions/the-tibetan-buddhist-shrine-room> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/exhibitions/the-tibetan-buddhist-shrine-room> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-creating-a-culture-of-consent-10-12-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-creating-a-culture-of-consent-10-12-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/tibetan-mantra-healing-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/tibetan-mantra-healing-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-spiritual-work-in-a-material-world-the-business-of-yoga-09-28-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-spiritual-work-in-a-material-world-the-business-of-yoga-09-28-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/k2-friday-night-tour-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/k2-friday-night-tour-06-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-seeing-the-sacred-in-samsara-08-14-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-seeing-the-sacred-in-samsara-08-14-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-mental-health-in-asian-american-communities-07-27-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-mental-health-in-asian-american-communities-07-27-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-black-american-buddhists-activism-and-community-07-24-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-brainwave-black-american-buddhists-activism-and-community-07-24-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-education-and-future-of-himalayan-immigrant-communities-07-13-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-education-and-future-of-himalayan-immigrant-communities-07-13-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/jerry-colonna-dan-harris-07-10-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/jerry-colonna-dan-harris-07-10-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/the-power-of-a-single-cell-the-deep-history-of-ourselves-09-11-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/the-power-of-a-single-cell-the-deep-history-of-ourselves-09-11-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rubinmuseum.org/events/event/power-brainwave-the-case-against-reality-08-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+2019-06-22 05:42:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rubinmuseum.org/events/event/power-brainwave-the-case-against-reality-08-21-2019> (referer: https://rubinmuseum.org/events?category=14)
+Traceback (most recent call last):
+  File "c:\users\julian\appdata\local\programs\python\python37\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\community\community\community\spiders\communitySpider.py", line 24, in parse_page
+    item['title'] = response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h1').extract() + " " + response.xpath('/html/body/div[2]/div/div[2]/div[2]/div[1]/div[2]/h2').extract()
+TypeError: can only concatenate list (not "str") to list
+2019-06-22 05:42:20 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-06-22 05:42:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 12826,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 327676,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 24,
+ 'downloader/response_status_count/302': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 6, 21, 21, 42, 20, 357914),
+ 'log_count/DEBUG': 26,
+ 'log_count/ERROR': 22,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 1,
+ 'response_received_count': 24,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 24,
+ 'scheduler/dequeued/memory': 24,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'spider_exceptions/TypeError': 22,
+ 'start_time': datetime.datetime(2019, 6, 21, 21, 41, 51, 195414)}
+2019-06-22 05:42:20 [scrapy.core.engine] INFO: Spider closed (finished)
